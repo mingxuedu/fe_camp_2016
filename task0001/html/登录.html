@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>恕瑞玛的召唤</title>
+<link rel="stylesheet" href="../css/login.css"
+</head>
+<body>
+<audio autoplay="autoplay">
+    <source src="../music/恕瑞玛.m4a">
+</audio>
+<div class="login">
+    <div class="login-header">
+        <h1>恕瑞玛的召唤</h1>
+        <h1>恕瑞玛已经归来，你准备好目睹这次伟大的复兴了吗？</h1>
+        <div class="login-content"></div>
+        <label for="usename">召唤师</label>
+        <input type="text" id="usename" placeholder="请输入你的名字"><br/>
+        <label for="password">目的地</label>
+        <input type="text" id="password" placeholder="请输入你的目的地"><br/>
+        <button id="button">传送</button>
+        <button id="button1">放弃</button>
+    </div>
+</div>
+<script>var btn=document.getElementById("button");
+btn.onclick=function() {
+    alert("传送失败，能量不足");
+}
+    var btn1=document.getElementById("button1");
+    btn1.onclick=function() {
+        alert("你会后悔的");
+    }
+</script>
+</body>
+</html>
