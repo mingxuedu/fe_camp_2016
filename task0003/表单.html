@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+        table,tr,td,input,select,button{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 50px;
+        }
+        body {
+            margin: 0 auto;
+            text-align: center;
+            background-image: url("3.jpg");
+            background-size: cover;
+        }
+
+        hr {
+            height: 1px;
+            border: none;
+            /*加虚线*/
+            border-top: 1px dashed #000;
+        }
+
+        tr td:nth-child(1) {
+            /*第一个td向右对齐*/
+            text-align: right;
+        }
+
+        tr td:nth-child(2) {
+            /*第二个td向左对齐*/
+            text-align: left;
+        }
+
+        textarea {
+            /*显示右侧滚动条*/
+            overflow: scroll;
+            /*隐藏左右滚动条*/
+            overflow-x: hidden;
+            /*隐藏右下角的拖拽标记*/
+            resize: none;
+        }
+
+        #result {
+            margin: 10px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h3>用户注册</h3>
+<div>
+    <table align="center">
+        <tr>
+            <td>
+                用户名：
+            </td>
+            <td>
+                <input type="text" id="username" placeholder="--请输入用户名--" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                密码：
+            </td>
+            <td>
+                <input type="password" id="password" placeholder="--请输入密码--" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                重复输入密码：
+            </td>
+            <td>
+                <input type="password" id="confirmPassword" placeholder="--请重复输入密码--" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                身份证号：
+            </td>
+            <td>
+                <input type="text" id="idNumber" placeholder="--请输入身份证号--" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                性别：
+            </td>
+            <td>
+                <input type="radio" name="sex" checked="checked" value="男" />男
+                <input type="radio" name="sex" value="女" />女
+            </td>
+        </tr>
+        <tr>
+            <td>
+                爱好：
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" value="体育" />体育
+                <input type="checkbox" name="hobby" value="音乐" />音乐
+                <input type="checkbox" name="hobby" value="文学" />文学
+                <input type="checkbox" name="hobby" value="其他" />其他
+            </td>
+        </tr>
+        <tr>
+            <td>
+                班级：
+            </td>
+            <td>
+                <select id="myclass" class="myclass">
+                    <option value="集成1601">集成1601</option>
+                    <option value="集成1602">集成1602</option>
+                    <option value="集卓1601" selected="selected">集卓1601</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <button onclick="register()">注册</button>
+</div>
+<div id="result"></div>
+</body>
+</html>
