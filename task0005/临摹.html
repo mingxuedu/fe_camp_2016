@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            display: block;
+        }
+        #hd0{
+            height: 20px;
+        }
+        a{
+            display: block;
+            margin-left: 100px;
+        }
+        ul li{
+            float: left;
+            padding: 0 20px;
+            font-size: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        .page{
+            text-align: left;
+            margin: 0!important;
+            padding: 0 9px;
+            line-height: 26px;
+            text-decoration: none;
+            display: none;
+        }
+        .line{
+        }
+        ul li:hover .page{
+            display: block;
+        }
+        img{
+            width: 270px;
+            height:129px;
+            border: 0;
+            text-align: center;
+        }
+        #hd1{
+            padding-top: 110px;
+            text-align: center;
+        }
+        .line{
+            float: none;
+        }
+        #in1{
+            width: 539px;
+            height: 34px;
+            margin-right: 0;
+            border: 1px solid #b6b6b6;
+            border-right-width: 0;
+            display: inline-block;
+        }
+        #in2{
+            width: 100px;
+            height: 36px;
+            border-bottom: 1px solid #2d78f4;
+            background: #3385ff;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 15px;
+            outline: medium;
+        }
+
+    </style>
+</head>
+<body>
+<div id="hd0">
+    <ul>
+        <li><a href="#">糯米</a> </li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">hao123</a></li>
+        <li><a href="#">地图</a></li>
+        <li><a href="#">视频</a></li>
+        <li><a href="#">贴吧</a></li>
+        <li><a href="#">登录</a></li>
+        <li><a href="#">设置</a>
+            <ul class="page">
+                <li class="line"><a href="#">搜索设置</a> </li>
+                <li class="line"><a href="#">高级搜索</a> </li>
+                <li class="line"><a href="#">关闭预测</a> </li>
+                <li class="line"><a href="#">搜索历史</a> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="hd1">
+    <div id="hd2">
+        <img src="1.png">
+    </div>
+    <span>
+        <input id="in1">
+    </span>
+    <span>
+        <input type="submit" value="百度一下" id="in2">
+    </span>
+
+</div>
+
+</body>
+</html>
